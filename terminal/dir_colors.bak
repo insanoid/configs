@@ -1,0 +1,225 @@
+# **********************************************************************
+#
+# Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the --color option.
+# The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
+# slackware version of dircolors) are recognized but ignored.
+#
+# **********************************************************************
+
+
+
+# ===========================================================================
+# Below, there should be one TERM entry for each termtype that is colorizable
+# ===========================================================================
+TERM Eterm
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM eterm-color
+TERM gnome
+TERM gnome-256color
+TERM jfbterm
+TERM konsole
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM rxvt
+TERM rxvt-256color
+TERM rxvt-cygwin
+TERM rxvt-cygwin-native
+TERM rxvt-unicode
+TERM rxvt-unicode256
+TERM screen
+TERM screen-256color
+TERM screen-256color-bce
+TERM screen-bce
+TERM screen-w
+TERM screen.linux
+TERM vt100
+TERM xterm
+TERM xterm-16color
+TERM xterm-256color
+TERM xterm-88color
+TERM xterm-color
+TERM xterm-debian
+
+
+
+# ===============================================
+# Below are the color init strings numeric codes:
+# ===============================================
+
+# Attribute codes:
+# ----------------
+# 00=none 
+# 01=bold 
+# 04=underlined 
+# 05=flashing 
+# 07=reverse 
+# 08=concealed
+
+# Text color codes:
+# -----------------
+# 30=black 
+# 31=red 
+# 32=green 
+# 33=yellow
+# 34=blue 
+# 35=magenta
+# 36=cyan 
+# 37=grey
+# 90=dark grey 
+# 91=bright red
+# 92=bright green
+# 93=bright yellow
+# 94=bright blue
+# 95=bright magenta
+# 96=turqoise
+
+# Background color codes:
+# -----------------------
+# 40=black 
+# 41=red 
+# 42=green 
+# 43=yellow/orange 
+# 44=blue 
+# 45=magenta/purple 
+# 46=cyan 
+# 47=white/grey
+# 100=dark grey
+# 101=light red
+# 102=light green
+# 103=yellow
+# 104=light blue
+# 105=light purple
+# 106=turqoise
+
+
+
+# ==============================================================
+# Below are the color init strings for the specified file types.
+# ==============================================================
+
+NORMAL 00		# global default
+FILE 0;90		# normal file
+DIR 01;34		# directory
+EXEC 0;30;47	# executable file
+LINK 01;35 		# symbolic link
+FIFO 41;33		# pipe
+SOCK 01;35		# socket
+DOOR 01;35		# door
+BLK 42;33;01	# block device driver
+CHR 42;33;01 	# character device driver
+ORPHAN 44;31;01	# symlink to nonexistent file
+
+
+# Source code:
+# ------------
+.cpp 0;36
+.c 0;36
+.h 0;36
+.m 0;36
+.java 0;36
+.py 0;36
+.html 0;36
+.css 0;36
+.php 0;36
+.js 0;36
+.swift 0;36
+
+
+# Archives:
+# ---------
+.tar 01;31 
+.tgz 01;31
+.zip 01;31
+.z   01;31
+.gz  01;31
+.bz2 01;31
+.deb 01;31
+.jar 01;31
+.dmg 01;31
+.iso 01;31
+
+
+# Image formats:
+# --------------
+.jpg 0;35
+.JPG 0;35
+.jpeg 0;35
+.JPEG 0;35
+.pdf 0;35
+.PDF 0;35
+.png 0;35
+.PNG 0;35
+.gif 0;35
+.GIF 0;35
+.bmp 0;35
+.BMP 0;35
+.tif 0;35
+.TIF 0;35
+.tiff 0;35
+.TIFF 0;35
+.epub 0;35
+.EPUB 0;35
+.svg 0;35
+.SVG 0;35
+
+
+# Video formats:
+# --------------
+.mpg 0;33
+.MPG 0;33
+.avi 0;33
+.AVI 0;33
+.mp4 0;33
+.MP4 0;33
+.mkv 0;33
+.MKV 0;33
+.m4v 0;33
+.M4V 0;33
+.wmv 0;33
+.WMV 0;33
+.mov 0;33
+.MOV 0;33
+
+
+# Audio formats:
+# --------------
+.mp3 0;33
+.MP3 0;33
+.wav 0;33
+.WAV 0;33
+.aac 0;33
+.AAC 0;33
+.flac 0;33
+.FLAC 0;33
+.ogg 0;33
+.OGG 0;33
+.m4r 0;33
+.M4R 0;33
+.m4a 0;33
+.M4A 0;33
+.aif 0;33
+.AIF 0;33
+.aiff 0;33
+.AIFF 0;33
+.caf 0;33
+.CAF 0;33

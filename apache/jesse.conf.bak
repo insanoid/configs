@@ -1,0 +1,6 @@
+<Directory "/Users/jesse/Sites/">
+Options FollowSymLinks Indexes MultiViews
+AllowOverride All
+Order allow,deny
+Allow from all
+</Directory>

@@ -1,0 +1,72 @@
+# Homebrew
+# --------
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+export RBENV_ROOT=/usr/local/var/rbenv
+
+if which rbenv > /dev/null; then
+   eval "$(rbenv init -)";
+fi
+
+
+# Configure shell prompt
+# ----------------------
+NM="\[\033[0;38m\]"  # default text color
+DT="\[\033[0;33m\]"  # date color
+UN="\[\033[1;37m\]" # username color
+MA="\[\033[0;38m\]"  # machine name color
+DI="\[\033[0;37m\]"  # current directory color
+
+export PS1="$DT\$(date +%r) $NM[$UN\u$NM] $MA\h$NM:$DI\w$NM$ "
+
+
+# Terminal colors (after installing GNU coreutils)
+# ------------------------------------------------
+if [ "$TERM" != "dumb" ]; then
+   export LS_OPTIONS='--color=auto'
+   eval `dircolors ~/.dir_colors`
+fi
+
+alias ls='ls $LS_OPTIONS'
+
+
+# Git auto-complete
+# -----------------
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+   . $(brew --prefix)/etc/bash_completion
+fi
+
+
+# Custom commands
+# ---------------
+
+# open files in Xcode
+xcode() {
+   open -a Xcode "$@"
+}
+
+# open files in Sublime Text
+edit() {
+   open -a Sublime\ Text "$@"
+}
+
+# open files in Safari
+safari() {
+   open -a Safari "$@"
+}
+
+# update home brew
+brewit() {
+   brew update && brew upgrade --all && brew doctor && brew cleanup && brew doctor
+}
+
+# remove derived data
+cleanXcode() {
+   rm -rf ~/Library/Developer/Xcode/DerivedData
+}
+
+# quit terminal
+quit() {
+   killall Terminal
+}

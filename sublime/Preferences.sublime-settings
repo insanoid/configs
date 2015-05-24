@@ -1,0 +1,15 @@
+{
+   "color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+   "highlight_line": true,
+
+   "tab_size": 3,
+   "translate_tabs_to_spaces": true,
+   "default_encoding": "UTF-8",
+
+   "open_files_in_new_window": false,
+   "create_window_at_startup": false,
+   "word_wrap": true,
+
+   "ensure_newline_at_eof_on_save": true,
+   "trim_trailing_white_space_on_save": true
+}
