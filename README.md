@@ -1,2 +1,3 @@
 # configs
-Backups for dotfiles, confs, settings, preferences, etc.
+
+*Backups for my dotfiles, confs, settings, preferences, etc.*
