@@ -15,5 +15,6 @@ brew install mysql
 brew install rbenv
 brew install xctool
 brew install mogenerator
+brew install tree
 
 brew doctor
