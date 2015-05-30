@@ -1,0 +1,11 @@
+[user]
+	name = Jesse Squires
+	email = jesse.d.squires@gmail.com
+[core]
+	editor = vim
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[merge]
+	tool = opendiff
