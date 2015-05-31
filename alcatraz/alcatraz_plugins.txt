@@ -1,0 +1,10 @@
+Alcatraz
+Backlight
+ClangFormat
+DerivedData Exterminator
+FuzzyAutocomplete
+KPRunEverywhereXcodePlugin
+KSImageNamed
+Lin
+OMColorSense
+VVDocumenter-Xcode
